@@ -67,7 +67,12 @@ while True:
         l['r'+str(r)][p1-1] = 'X'
     else:
         print('There is already a character there')
-    
+        
+    if winchek(l)!='n':
+        board(l)
+        print(winchek(l))
+        break
+       
     board(l)
     p2 = int(input('Player two, enter a number from 1 to 9:'))
     r_=1
